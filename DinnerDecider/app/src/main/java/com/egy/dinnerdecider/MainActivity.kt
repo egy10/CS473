@@ -8,7 +8,7 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity() {
     var foods = ArrayList<String>(
         arrayListOf(
-            "Hamburger", "Pizza",
+            "Hamburger", "Pizza", "Өөхтэй цай",
             "Mexican", "American", "Chinese"
         )
     )
