@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TabLayout</string>
+    <string name="column1">Enter Android Version</string>
+    <string name="column2">Enter Android Code Name</string>
+    <string name="add">Add</string>
+
+</resources>
