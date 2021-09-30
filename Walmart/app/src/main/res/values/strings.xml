@@ -3,8 +3,8 @@
     <string name="sign_my_acc">Sign in to your account</string>
     <string name="email">Email address (required)</string>
     <string name="passport">Passport (required)</string>
-    <string name="forgot_pass">Forgot passport</string>
-    <string name="no_account">Do not have an account </string>
+    <string name="forgot_pass">Forgot passport?</string>
+    <string name="no_account">Don\'t have an account </string>
     <string name="sign_in">Sign in </string>
     <string name="button">Create a new account</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.egy.tablayout
+package com.egy.wallmartlogin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import androidx.core.view.setPadding
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val table = findViewById<TableLayout>(R.id.table)
         val txt1 = findViewById<TextView>(R.id.column1)
         val txt2 = findViewById<TextView>(R.id.column2)
+
         add.setOnClickListener {
 
             val tableRow = TableRow(applicationContext)
@@ -39,13 +39,5 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(applicationContext, "Success", Toast.LENGTH_LONG).show()
         }
-    }
-
-    fun button(view: android.view.View) {
-        // Create a new table row.
-        val tableRow = TableRow(getApplicationContext())
-        // Set new table row layout parameters.
-        val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
-        tableRow.setLayoutParams(layoutParams)
     }
 }
