@@ -37,7 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:shrinkColumns="*"
-        android:stretchColumns="*">
+        android:stretchColumns="*"
+        >
 
         <TableRow
             android:layout_width="match_parent"
@@ -45,16 +46,16 @@
             android:paddingBottom="6dp">
 
             <TextView
-                android:id="@+id/tw1"
+                android:id="@+id/v1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/v1" />
 
             <TextView
-                android:id="@+id/tw2"
+                android:id="@+id/n1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/n1" />
 
         </TableRow>
 
@@ -64,16 +65,16 @@
             android:paddingBottom="6dp">
 
             <TextView
-                android:id="@+id/tw1"
+                android:id="@+id/v2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/v2" />
 
             <TextView
-                android:id="@+id/tw2"
+                android:id="@+id/n2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/n2" />
 
         </TableRow>
 
@@ -83,16 +84,16 @@
             android:paddingBottom="6dp">
 
             <TextView
-                android:id="@+id/tw1"
+                android:id="@+id/v3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/v3" />
 
             <TextView
-                android:id="@+id/tw2"
+                android:id="@+id/n3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/n3" />
 
         </TableRow>
     </TableLayout>

@@ -3,5 +3,11 @@
     <string name="column1">Enter Android Version</string>
     <string name="column2">Enter Android Code Name</string>
     <string name="add">Add</string>
+    <string name="v1">Android versions 5.0</string>
+    <string name="n1">Lollipop</string>
+    <string name="v2">Android version 8.0</string>
+    <string name="n2">Oreo</string>
+    <string name="v3">Android version 6.0</string>
+    <string name="n3">Marshmallow</string>
 
 </resources>

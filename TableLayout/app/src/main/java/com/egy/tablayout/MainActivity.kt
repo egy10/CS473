@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
             val tableRow = TableRow(applicationContext)
             val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
             tableRow.layoutParams = layoutParams
-
             val columnOne = TextView(this)
             columnOne.text = txt1.text
             columnOne.setPadding(10)
