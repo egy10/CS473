@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Walmart</string>
+    <string name="app_name">WalmartS</string>
     <string name="sign_my_acc">Sign in to your account</string>
     <string name="email">Email address (required)</string>
     <string name="passport">Passport (required)</string>
