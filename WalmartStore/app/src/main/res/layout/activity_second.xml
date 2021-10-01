@@ -49,12 +49,14 @@
                 android:id="@+id/beauty"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                app:srcCompat="@drawable/beauty1" />
+                app:srcCompat="@drawable/beauty1"
+                android:onClick="click"/>
 
             <TextView
                 android:id="@+id/beautytext"
                 android:layout_width="149dp"
                 android:layout_height="30dp"
+                android:textSize="25sp"
                 android:layout_below="@+id/beauty"
                 android:gravity="center_horizontal"
                 android:text="@string/beauty" />
@@ -66,7 +68,8 @@
                 android:layout_height="150dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="0dp"
-                app:srcCompat="@drawable/food" />
+                app:srcCompat="@drawable/food"
+                android:onClick="click"/>
 
             <TextView
                 android:id="@+id/foodtext"
@@ -75,6 +78,7 @@
                 android:layout_below="@+id/beauty"
                 android:gravity="center_horizontal"
                 android:text="@string/food"
+                android:textSize="25sp"
                 android:layout_alignParentRight="true"/>
 
             <ImageButton
@@ -83,12 +87,14 @@
                 android:layout_height="150dp"
                 android:layout_below="@+id/beauty"
                 android:layout_marginTop="100dp"
-                app:srcCompat="@drawable/electronic"/>
+                app:srcCompat="@drawable/electronic"
+                android:onClick="click"/>
 
             <TextView
                 android:id="@+id/electronictext"
                 android:layout_width="149dp"
                 android:layout_height="30dp"
+                android:textSize="25sp"
                 android:layout_below="@+id/electronic"
                 android:gravity="center_horizontal"
                 android:text="@string/elect"
@@ -101,6 +107,7 @@
                 android:layout_below="@+id/food"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="100dp"
+                android:onClick="click"
                 app:srcCompat="@drawable/clothing"
                 />
 
@@ -108,6 +115,7 @@
                 android:id="@+id/clothingtext"
                 android:layout_width="149dp"
                 android:layout_height="30dp"
+                android:textSize="25sp"
                 android:layout_below="@+id/electronic"
                 android:gravity="center_horizontal"
                 android:text="@string/clothing"

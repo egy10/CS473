@@ -17,7 +17,18 @@ class SecondActivity : AppCompatActivity() {
         val textViewUserName = findViewById<TextView>(R.id.username)
         textViewUserName.text = userInfo.username
 
-//        Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show()
+//
+    }
+
+    fun click(view: android.view.View) {
+        when (view?.id){
+            R.id.beauty-> Toast.makeText(this, "You have chosen the Beauty category of shopping", Toast.LENGTH_LONG).show()
+            R.id.clothing -> Toast.makeText(this, "You have chosen the Clothing category of shopping", Toast.LENGTH_LONG).show()
+            R.id.food-> Toast.makeText(this, "You have chosen the Food category of shopping", Toast.LENGTH_LONG).show()
+            R.id.electronic ->Toast.makeText(this, "You have chosen the Electronic category of shopping", Toast.LENGTH_LONG).show()
+        }
+
+
     }
 
 
