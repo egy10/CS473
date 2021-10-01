@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
         val textViewUserName = findViewById<TextView>(R.id.username)
         textViewUserName.text = userInfo.username
 
-        Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show()
+//        Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show()
     }
 
 

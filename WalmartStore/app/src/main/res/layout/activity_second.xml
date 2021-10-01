@@ -27,8 +27,8 @@
             android:layout_below="@+id/username"
             android:layout_alignParentRight="true"
             android:gravity="center"
-            android:textSize="30dp"
-            android:text="@string/category" />
+            android:text="@string/category"
+            android:textSize="30dp" />
 
     </RelativeLayout>
 

@@ -4,12 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdActivity2">
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="232dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walmart" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/sign_my_acc"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/createnewacc"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+
+    <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_my_acc">
+
+        <TextView
+            android:id="@+id/passreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passreq"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/firsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstname"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/edfirsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:id="@+id/lastname"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname" />
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:id="@+id/emailadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addemail"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/etemailadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/passport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/createacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:text="@string/createacc"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/wall"
+            android:onClick="createImplicit"/>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

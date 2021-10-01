@@ -12,4 +12,11 @@
     <string name="food">Food</string>
     <string name="elect">Electronic</string>
     <string name="clothing">Clothing</string>
+    <string name="firstname">First name*</string>
+    <string name="lastname">Last name*</string>
+    <string name="addemail">Email address*</string>
+    <string name="createacc">Create Account*</string>
+    <string name="pass">Password*</string>
+    <string name="passreq"> *required field</string>
+    <string name="createnewacc">Create your account</string>
 </resources>

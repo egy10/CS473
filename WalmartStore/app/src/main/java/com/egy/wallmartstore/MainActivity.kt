@@ -38,17 +38,13 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-
         val intent = Intent(this, SecondActivity::class.java)
 
         val userInfo = UserInfo(username.text.toString(), password.text.toString())
         intent.putExtra("userinfo", userInfo)
 
         startActivity(intent)
-
-
     }
-
     override fun onResume() {
         super.onResume()
         Toast.makeText(this, "Please login", Toast.LENGTH_LONG).show()
