@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        Toast.makeText(this, "Sain uu", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Please login", Toast.LENGTH_LONG).show()
     }
 
 }

@@ -13,7 +13,7 @@ class SecondActivity : AppCompatActivity() {
         userInfo = intent.getSerializableExtra("userinfo") as UserInfo
 
         val textViewUserName = findViewById<TextView>(R.id.username)
-        textViewUserName.text = userInfo.username + "    " + userInfo.userpassword
+        textViewUserName.text = userInfo.username
 
     }
 
