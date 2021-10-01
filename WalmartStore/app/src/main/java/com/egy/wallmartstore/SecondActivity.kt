@@ -2,7 +2,9 @@ package com.egy.wallmartstore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +17,8 @@ class SecondActivity : AppCompatActivity() {
         val textViewUserName = findViewById<TextView>(R.id.username)
         textViewUserName.text = userInfo.username
 
+        Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show()
     }
+
 
 }

@@ -7,4 +7,9 @@
     <string name="no_account">Don\'t have an account? </string>
     <string name="sign_in">Sign in </string>
     <string name="button">Create a new account</string>
+    <string name="category">Shop by Categories</string>
+    <string name="beauty">Beauty</string>
+    <string name="food">Food</string>
+    <string name="elect">Electronic</string>
+    <string name="clothing">Clothing</string>
 </resources>
