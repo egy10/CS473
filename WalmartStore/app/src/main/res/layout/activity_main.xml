@@ -46,9 +46,10 @@
             android:text="@string/email" />
 
         <EditText
-            android:id="@+id/edittext"
+            android:id="@+id/etusername"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
 
         <TextView
             android:id="@+id/passport"
@@ -57,18 +58,19 @@
             android:text="@string/passport" />
 
         <EditText
-            android:id="@+id/edit_text"
+            android:id="@+id/etpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
 
         <Button
-            android:id="@+id/sign_in "
+            android:id="@+id/click"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/sign_in"
             android:textAllCaps="false"
-            app:backgroundTint="@color/wall" />
+            app:backgroundTint="@color/wall"
+            android:onClick="signInImpilicit"/>
 
         <TextView
             android:id="@+id/forgot_pass"
