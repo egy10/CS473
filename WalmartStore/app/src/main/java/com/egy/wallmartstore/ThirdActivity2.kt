@@ -12,7 +12,7 @@ class ThirdActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_third2)
 
     }
-    fun createImplicit(view: android.view.View): () -> Unit {
+    fun createImplicit(view: android.view.View) {
 
         val email = findViewById<EditText>(R.id.etemailadd).text.toString()
         val pass = findViewById<EditText>(R.id.etpassword).text.toString()
@@ -21,8 +21,8 @@ class ThirdActivity2 : AppCompatActivity() {
 
         if (email.isEmpty()||pass.isEmpty()){
             Toast.makeText(applicationContext, "Please enter an email or passport", Toast.LENGTH_SHORT).show()
+            return
         }
-        return{
 
         var userInfo : UserInfo = UserInfo(email, pass)
 
@@ -33,7 +33,8 @@ class ThirdActivity2 : AppCompatActivity() {
         startActivity(intent)
 
         Toast.makeText(this, "New account created successfully!", Toast.LENGTH_LONG).show()
-        }
+
+
     }
 
 }
