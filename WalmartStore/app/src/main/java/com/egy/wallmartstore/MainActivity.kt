@@ -45,9 +45,16 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+
     override fun onResume() {
         super.onResume()
-        Toast.makeText(this, "Please login to our page", Toast.LENGTH_SHORT).show()
+
+        val newaccount: UserInfo
+
+        if (intent.hasExtra("newaccount")) {
+            newaccount = intent.getSerializableExtra("newaccount") as UserInfo
+            users.add(newaccount)
+        }
     }
 
 
