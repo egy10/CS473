@@ -47,7 +47,15 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        Toast.makeText(this, "Please login", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Please login to our page", Toast.LENGTH_SHORT).show()
+    }
+
+
+    fun createacc(view: android.view.View) {
+
+        val intent = Intent(this, ThirdActivity2::class.java)
+
+        startActivity(intent)
     }
 
 }

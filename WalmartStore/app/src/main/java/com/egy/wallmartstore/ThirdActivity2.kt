@@ -8,7 +8,8 @@ class ThirdActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third2)
 
-
+    }
+    fun createImplicit(view: android.view.View) {
 
     }
 }

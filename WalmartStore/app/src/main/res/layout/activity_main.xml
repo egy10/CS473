@@ -116,6 +116,7 @@
             android:layout_marginTop="10dp"
             android:textAllCaps="false"
             android:text="@string/button"
+            android:onClick="createacc"
             android:textColor="@android:color/holo_blue_dark"
             app:backgroundTint="@android:color/white" />
     </LinearLayout>
