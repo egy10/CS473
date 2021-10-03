@@ -13,14 +13,16 @@ class ThirdActivity2 : AppCompatActivity() {
 
     }
     fun createImplicit(view: android.view.View) {
-
+        val firsname = findViewById<EditText>(R.id.edfirsname).text.toString()
+        val lastname = findViewById<EditText>(R.id.etlastname).text.toString()
         val email = findViewById<EditText>(R.id.etemailadd).text.toString()
         val pass = findViewById<EditText>(R.id.etpassword).text.toString()
 
+
         //TODO validate email and pass
 
-        if (email.isEmpty()||pass.isEmpty()){
-            Toast.makeText(applicationContext, "Please enter an email or passport", Toast.LENGTH_SHORT).show()
+        if (email.isEmpty()||pass.isEmpty() || firsname.isEmpty() || lastname.isEmpty()){
+            Toast.makeText(applicationContext, "Please enter your information ", Toast.LENGTH_SHORT).show()
             return
         }
 
