@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/category"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageButton
+                android:id="@+id/beauty"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:onClick="click"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/beauty1" />
+
+            <TextView
+                android:id="@+id/beautytext"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:textSize="25sp"
+                android:layout_below="@+id/beauty"
+                android:gravity="center_horizontal"
+                android:text="@string/beauty" />
+
+
+            <ImageButton
+                android:id="@+id/food"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:onClick="click"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/food" />
+
+            <TextView
+                android:id="@+id/foodtext"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/beauty"
+                android:gravity="center_horizontal"
+                android:text="@string/food"
+                android:textSize="25sp"
+                android:layout_alignParentRight="true"/>
+
+            <ImageButton
+                android:id="@+id/electronic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/beauty"
+                android:layout_marginTop="100dp"
+                android:onClick="click"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/electronic" />
+
+            <TextView
+                android:id="@+id/electronictext"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/electronic"
+                android:gravity="center_horizontal"
+                android:text="@string/elect"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/clothing"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/food"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="100dp"
+                android:onClick="click"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/clothing"
+                />
+
+            <TextView
+                android:id="@+id/clothingtext"
+                android:layout_width="149dp"
+                android:layout_height="30dp"
+                android:textSize="25sp"
+                android:layout_below="@+id/electronic"
+                android:gravity="center_horizontal"
+                android:text="@string/clothing"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </TableRow>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
