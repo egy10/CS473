@@ -9,7 +9,7 @@
         android:id="@+id/question1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Asuult"
+        android:text="@string/question1"
         android:textSize="20sp"/>
 
     <RadioGroup
@@ -22,57 +22,63 @@
             android:id="@+id/radio_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello Monoglia" />
+            android:text="@string/ans6" />
 
         <RadioButton
             android:id="@+id/radio_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2" />
+            android:text="@string/ans7"/>
 
         <RadioButton
             android:id="@+id/radio_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3" />
+            android:text="@string/ans8" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/question2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Asuult2"
+        android:text="@string/question2"
         android:textSize="20sp" />
     <CheckBox
         android:id="@+id/check_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuck"/>
+        android:text="@string/ans1"/>
     <CheckBox
         android:id="@+id/check_two"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/ans2"/>
     <CheckBox
         android:id="@+id/checkthree"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/ans3"/>
+    <CheckBox
+        android:id="@+id/checkfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans4"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        >
+        android:gravity="center">
         <Button
             android:id="@+id/submitbuttton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="submit"/>
+            android:text="@string/submit" />
         <Button
             android:id="@+id/clearbuttton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"></Button>
+            android:text="@string/reset"></Button>
     </LinearLayout>
 
 </LinearLayout>

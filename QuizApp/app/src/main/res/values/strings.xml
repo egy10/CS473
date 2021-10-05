@@ -2,4 +2,14 @@
     <string name="app_name">QuizApp</string>
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
+    <string name="question1">The who types of construction in Kotlin are?</string>
+    <string name="ans6">Primary and Secondary constructor</string>
+    <string name="ans7">First and the second constructor</string>
+    <string name="ans8">Constant and Parameterized</string>
+    <string name="question2">Which extension is responsible to save Kotlin files?</string>
+    <string name="ans1">.kot</string>
+    <string name="ans3">.src</string>
+    <string name="ans4">.kt</string>
+    <string name="ans2">.kts</string>
+
 </resources>

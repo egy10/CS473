@@ -1,7 +1,10 @@
 package com.egy.wallmartstorelab6
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -16,7 +19,6 @@ class SecondActivity : AppCompatActivity() {
         val textViewUserName = findViewById<TextView>(R.id.username)
         textViewUserName.text ="Welcome"+ " " +  userInfo.username
 
-//
     }
 
     fun click(view: android.view.View) {
@@ -29,6 +31,8 @@ class SecondActivity : AppCompatActivity() {
 
 
     }
+
+
 
 
 }
