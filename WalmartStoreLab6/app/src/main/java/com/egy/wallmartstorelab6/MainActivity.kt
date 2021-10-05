@@ -55,23 +55,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ThirdActivity2::class.java)
         startActivity(intent)
     }
-//    forgetpass.setOnClickListener(){
-//
-//        var email = emailAddr.text.toString()
-//        for(i in users){
-//            if(email == i.username) {
-//
-//                var setIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"))
-//                setIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
-//                setIntent.putExtra(Intent.EXTRA_SUBJECT, "Recovered password:")
-//                setIntent.putExtra(Intent.EXTRA_TEXT,"Password is: ${i.password}")
-//                startActivity(Intent.createChooser(setIntent,"Sending via"))
-//
-//                return@setOnClickListener
-//            }
-//
-//        }
-//        Toast.makeText(applicationContext,"User not found", Toast.LENGTH_SHORT).show()
-//    }
+
 
 }

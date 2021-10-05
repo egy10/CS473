@@ -23,14 +23,32 @@ class SecondActivity : AppCompatActivity() {
 
     fun click(view: android.view.View) {
         when (view?.id){
-            R.id.beauty-> Toast.makeText(this, "You have chosen the Beauty category of shopping", Toast.LENGTH_SHORT).show()
-            R.id.clothing -> Toast.makeText(this, "You have chosen the Clothing category of shopping", Toast.LENGTH_SHORT).show()
-            R.id.food-> Toast.makeText(this, "You have chosen the Food category of shopping", Toast.LENGTH_SHORT).show()
-            R.id.electronic ->Toast.makeText(this, "You have chosen the Electronic category of shopping", Toast.LENGTH_SHORT).show()
+            R.id.beauty-> {
+                val intent = Intent(applicationContext, ListviewActivity::class.java)
+                intent.putExtra("category", "beauty")
+                startActivity(intent)
+            }
+            R.id.clothing -> {
+                val intent = Intent(applicationContext, ListviewActivity::class.java)
+                intent.putExtra("category", "clothing")
+                startActivity(intent)
+            }
+            R.id.food-> {
+                val intent = Intent(applicationContext, ListviewActivity::class.java)
+                intent.putExtra("category", "food")
+                startActivity(intent)
+            }
+            R.id.electronic -> {
+                val intent = Intent(applicationContext, ListviewActivity::class.java)
+                intent.putExtra("category", "electronic")
+                startActivity(intent)
+            }
         }
 
 
     }
+
+
 
 
 

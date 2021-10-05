@@ -11,5 +11,9 @@
     <string name="ans3">.src</string>
     <string name="ans4">.kt</string>
     <string name="ans2">.kts</string>
+    <string name="radio_one" />
+    <string name="check_two" />
+    <string name="checkfour" />
+    <string name="check_four" />
 
 </resources>

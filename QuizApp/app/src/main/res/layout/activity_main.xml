@@ -43,6 +43,7 @@
         android:layout_height="wrap_content"
         android:text="@string/question2"
         android:textSize="20sp" />
+
     <CheckBox
         android:id="@+id/check_one"
         android:layout_width="wrap_content"
@@ -54,12 +55,12 @@
         android:layout_height="wrap_content"
         android:text="@string/ans2"/>
     <CheckBox
-        android:id="@+id/checkthree"
+        android:id="@+id/check_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ans3"/>
     <CheckBox
-        android:id="@+id/checkfour"
+        android:id="@+id/check_four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ans4"/>
@@ -70,16 +71,18 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
-            android:id="@+id/submitbuttton"
+            android:id="@+id/submitbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/submit"
+            android:onClick="showAlertDialog"
             android:layout_gravity="bottom" />
         <Button
             android:id="@+id/clearbuttton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/reset"
+            android:onClick="readytoquiz"
             android:layout_gravity="bottom"></Button>
     </LinearLayout>
 
