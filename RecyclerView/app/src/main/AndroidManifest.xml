@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.egy.recyclerview">
 
     <application
@@ -10,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerView">
         <activity
-            android:name=".RecyclerView"
+            android:name=".Detail"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".RecycleViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

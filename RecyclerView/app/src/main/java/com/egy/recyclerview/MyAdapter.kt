@@ -3,12 +3,13 @@ package com.egy.recyclerview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.itemlist.view.*
 
 class ListAdapter(
     var productList: ArrayList<Product>,
-    val itemClickListener: com.egy.recyclerview.RecyclerView
+    val itemClickListener: ItemClickListener
 ) : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
     interface ItemClickListener {
         fun onItemClick(position: Int)
@@ -17,7 +18,7 @@ class ListAdapter(
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
-                //TODO itemClickListener.onItemClick(adapterPosition)
+                itemClickListener.onItemClick(adapterPosition)
             }
         }
     }
