@@ -2,7 +2,7 @@
     <string name="app_name">QuizApp</string>
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
-    <string name="question1">The who types of construction in Kotlin are?</string>
+    <string name="question1">What are the different types of constructions in Kotlin?</string>
     <string name="ans6">Primary and Secondary constructor</string>
     <string name="ans7">First and the second constructor</string>
     <string name="ans8">Constant and Parameterized</string>

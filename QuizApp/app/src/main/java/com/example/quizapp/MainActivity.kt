@@ -8,10 +8,14 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
     var point = 0
+    val date = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+    val currentDate = date.format(Date())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,8 +40,11 @@ class MainActivity : AppCompatActivity() {
 
         val alertDialog = AlertDialog.Builder(this@MainActivity).create()
         alertDialog.setTitle("Result")
-        alertDialog.setMessage("Total score: " +point)
-        alertDialog.setButton(
+        alertDialog.setMessage(
+            "Total score: " +point + " "
+                    +"Submission date: " + currentDate)
+
+            alertDialog.setButton(
             AlertDialog.BUTTON_POSITIVE, "OK"
         ) { dialog, which -> dialog.dismiss() }
         alertDialog.show()
